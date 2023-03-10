@@ -5,8 +5,8 @@ import {MAIN_CARD_HEIGHT, MAIN_CARD_WIDTH} from '../utils/Constants'
 import logo from '../images/logo.png'
 
 const StyledImg= styled.img`
-  width: '50px';
-  height: '50px';
+  width: 70%;
+  height: 35%;
 `;
 
 const SplashScreen = () => {

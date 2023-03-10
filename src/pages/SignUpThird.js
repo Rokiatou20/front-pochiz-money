@@ -12,7 +12,7 @@ const StyledText = styled.p`
   margin: 15px 15px 0 0;
 `;
 
-const SignUpSecond = () => {
+const SignUpThird = () => {
   return (
     <Card
       width={MAIN_CARD_WIDTH}
@@ -23,11 +23,11 @@ const SignUpSecond = () => {
       centerY={true}
     >
       <SignUpHeader />
-      <StyledText>Veuillez entrez votre mot de passe.</StyledText>
+      <StyledText>Veuillez <b>confirmer</b> votre mot de passe.</StyledText>
       <CustomKeyboard />
-      <SubmitButton value='Suivant' />
+      <SubmitButton value="S'inscrire" />
     </Card>
   )
 }
 
-export default SignUpSecond
+export default SignUpThird

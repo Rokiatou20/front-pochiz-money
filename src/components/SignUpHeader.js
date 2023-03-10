@@ -10,7 +10,8 @@ const StyledCard = styled.div`
   width: 100%;
   height: ${MAIN_CARD_HEIGHT/3.5}px;
   background: ${GOLD};
-  border-radius: 25px 25px 0 0;
+  border-radius: 25px 25px ;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
 
   img{
     width: 183px;
