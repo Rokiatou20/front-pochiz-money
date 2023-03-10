@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import FeatherIcon from 'feather-icons-react';
+import PropTypes from 'prop-types';
 import { GOLD } from '../utils/Constants';
 import PasswordCircleContainer from './PasswordCircleContainer';
 
@@ -19,12 +20,12 @@ const StyledCard = styled.div`
   }
 
   .numpadNumber{
-    background: ${GOLD};
+    background: ${props => props.background};
+    color: ${props => props.color};
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    color: white;
     padding: 11px;
     border-radius: 10px;
     margin: 0 8px 8px 8px;
@@ -34,11 +35,11 @@ const StyledCard = styled.div`
   }
 `;
 
-const CustomKeyboard = () => {
+const CustomKeyboard = ({color, background}) => {
   return (
     <>
       <PasswordCircleContainer />
-      <StyledCard>
+      <StyledCard color={color} background={background}>
         {numbers.map((row, index) => (
           <div key={index} className="numpad">
             {row.map((number) => (
@@ -61,5 +62,15 @@ const CustomKeyboard = () => {
     </>
   )
 }
+
+CustomKeyboard.propTypes = {
+  color: PropTypes.string,
+  background: PropTypes.string
+};
+
+CustomKeyboard.defaultProps = {
+  color: 'white',
+  background: GOLD
+};
 
 export default CustomKeyboard
