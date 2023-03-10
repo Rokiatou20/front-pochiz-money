@@ -11,7 +11,7 @@ const StyledImg= styled.img`
 
 const SplashScreen = () => {
   return (
-    <div>
+    <div className='self-center'>
       <Card
         width={MAIN_CARD_WIDTH}
         height={MAIN_CARD_HEIGHT}

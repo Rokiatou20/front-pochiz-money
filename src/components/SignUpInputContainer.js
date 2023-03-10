@@ -32,7 +32,6 @@ const SignUpInputContainer = () => {
       </div>
       <SubmitButton value='Suivant' />
     </FormContainer>
-    
   )
 }
 

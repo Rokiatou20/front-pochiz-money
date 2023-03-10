@@ -4,14 +4,14 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const StyledCard = styled.div`
-  background: ${props => props.background};
   display: flex;
+  background: ${props => props.background};
   justify-content: center;
   align-items: center;
   width: 100%;
   height: ${MAIN_CARD_HEIGHT/3.5}px;
-  border-radius: 25px 25px ;
-  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 25px 25px 0 0;
+  ${'' /* box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2); */}
 
   img{
     width: 50%;
