@@ -1,24 +1,24 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import MainLayout from './MainLayout';
+import MainLayout from './layout/MainLayout';
 import SignUpFirst from './pages/SignUpFirst';
 import SignUpSecond from './pages/SignUpSecond';
 import SignUpThird from './pages/SignUpThird';
 import SplashScreen from './pages/SplashScreen';
 import SignIn from './pages/SignIn';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <Router>
-      <MainLayout>
-        <Routes>
+      <Routes>
+        <Route element={<MainLayout/>}>
           <Route path="/" element={<SplashScreen />} />
-          <Route path="/signup/first" element={<SignUpFirst />} />
-          <Route path="/signup/second" element={<SignUpSecond />} />
-          <Route path="/signup/third" element={<SignUpThird />} />
-          <Route path="/signin" element={<SignIn />} />
-        </Routes>
-      </MainLayout>
+          <Route path="/sign-up" element={<SignUpFirst />} />
+          <Route path="/sign-up/next" element={<SignUpSecond />} />
+          <Route path="/sign-up/end" element={<SignUpThird />} />
+          <Route path="/sign-in" element={<SignIn />} />
+        </Route>
+     </Routes>
     </Router>
   );
 }

@@ -1,7 +1,8 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import CustomInput from './CustomInput'
 import styled from 'styled-components';
-import SubmitButton from '../components/Button';
+import { GOLD } from '../utils/Constants';
 
 const FormContainer = styled.div`
   display: flex;
@@ -21,7 +22,13 @@ const FormContainer = styled.div`
   }
 `;
 
-const SignUpInputContainer = () => {
+const SignUpInputContainer = ({onNext}) => {
+
+  const navigate = useNavigate();
+  const handleButtonClick = () => {
+    navigate('/sign-up/next');
+  };
+
   return (
     <FormContainer>
       <div>
@@ -30,7 +37,13 @@ const SignUpInputContainer = () => {
         <CustomInput type='date' label='Date de naissance' placeholder='OUATTARA' onChange />
         <CustomInput type='tel' label='Numéro de téléphone' placeholder='01 02 03 04 05' onChange />
       </div>
-      <SubmitButton value='Suivant' />
+      <button 
+        type='submit'
+        onClick={onNext}
+        className={`bg-[${GOLD}] hover:bg-yellow-500 text-white font-bold py-3 px-8 rounded-lg drop-shadow-xl`}
+      >
+        Suivant
+      </button>
     </FormContainer>
   )
 }

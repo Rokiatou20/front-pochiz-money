@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import Card from '../components/Card'
 import styled from 'styled-components';
 import {MAIN_CARD_HEIGHT, MAIN_CARD_WIDTH} from '../utils/Constants'
@@ -10,8 +11,15 @@ const StyledImg= styled.img`
 `;
 
 const SplashScreen = () => {
+  
+  const navigate = useNavigate()
+  
+  setTimeout(() => {
+    navigate("/sign-in")
+  },3000)
+
   return (
-    <div className='self-center'>
+    <div className='self-center' >
       <Card
         width={MAIN_CARD_WIDTH}
         height={MAIN_CARD_HEIGHT}

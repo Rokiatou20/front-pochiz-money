@@ -24,7 +24,7 @@ const CustomInput = ({ type, label, value, placeholder, onChange }) => {
   return (
     <InputWrapper>
       <InputLabel>{label}</InputLabel>
-      <InputField type={type} value={value} placeholder={placeholder} onChange={onChange} />
+      <InputField type={type} value={value} placeholder={placeholder} onChange={onChange} required/>
     </InputWrapper>
   );
 };

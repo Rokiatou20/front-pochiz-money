@@ -21,13 +21,18 @@ const CodeCard = styled.div`
   }
 `;
 
-const PasswordCircleContainer = () => {
+const PasswordCircleContainer = ({code}) => {
   return (
-    <CodeCard>
-        {nbDigitCode.map((index) => (
-            <div key={index} className="circle"></div>
-        ))}
-    </CodeCard>
+    <div className='h-10 w-full mb-5 flex items-center justify-center gap-x-5'>
+      {nbDigitCode.map((index) => (
+        <div
+          key={index}
+          className={`h-8 w-8 rounded-full border-4 border-[${GOLD}] ${
+            index < code.length ? `bg-[${GOLD}]` : ''
+          }`}
+        ></div>
+      ))}
+    </div>
   )
 }
 

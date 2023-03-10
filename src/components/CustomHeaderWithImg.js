@@ -10,12 +10,12 @@ const StyledCard = styled.div`
   align-items: center;
   width: 100%;
   height: ${MAIN_CARD_HEIGHT/3.5}px;
-  border-radius: 25px 25px 0 0;
-  ${'' /* box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2); */}
+  border-radius: 25px 25px ;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
 
   img{
     width: 50%;
-    height: 95%;
+    height: 90%;
     box-shadow: '5px 5px 5px 5px rgba(0, 0, 0, 0.2)';
   }
 `;
