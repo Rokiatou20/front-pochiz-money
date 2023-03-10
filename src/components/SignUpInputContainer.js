@@ -1,5 +1,4 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom';
 import CustomInput from './CustomInput'
 import styled from 'styled-components';
 import { GOLD } from '../utils/Constants';
@@ -23,11 +22,6 @@ const FormContainer = styled.div`
 `;
 
 const SignUpInputContainer = ({onNext}) => {
-
-  const navigate = useNavigate();
-  const handleButtonClick = () => {
-    navigate('/sign-up/next');
-  };
 
   return (
     <FormContainer>

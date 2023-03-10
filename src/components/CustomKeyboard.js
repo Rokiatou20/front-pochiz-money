@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import FeatherIcon from 'feather-icons-react';
 import PropTypes from 'prop-types';
 import { GOLD } from '../utils/Constants';
-import PasswordCircleContainer from './PasswordCircleContainer';
 
 const numbers = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 

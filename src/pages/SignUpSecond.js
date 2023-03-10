@@ -14,12 +14,12 @@ const SignUpSecond = () => {
 
   const handleCodeChange = (newCode) => setCode(newCode);
   
-  useEffect(()=>{
-    if(code.length == 6){
-      navigate("/sign-up/end")
+  useEffect(() => {
+    if (code.length === 6) { 
+      navigate("/");
     }
-   },[code]
-  ) 
+  }, [code, navigate]);
+   
 
   return (
     <div className='self-center'>

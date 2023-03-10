@@ -15,12 +15,12 @@ const SignIn = () => {
   const handleCodeChange = (newCode) => setCode(newCode);
   const handleSignUp = () => navigate("/sign-up");
   
-  useEffect(()=>{
-    if(code.length == 6){
-      navigate("/")
+  useEffect(() => {
+    if (code.length === 6) {
+      navigate("/");
     }
-   },[code]
-  )  
+  }, [code, navigate]);
+   
 
   return (
     <div className='self-center'>
