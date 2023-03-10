@@ -42,4 +42,6 @@ CustomHeaderWithImg.defaultProps = {
   image: '',
   background: GOLD
 };
+
 export default CustomHeaderWithImg
+

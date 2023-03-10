@@ -8,7 +8,7 @@ const PasswordCircleContainer = ({code}) => {
       {nbDigitCode.map((index) => (
         <div
           key={index}
-          className={`h-8 w-8 rounded-full border-4 border-primary ${
+          className={`h-8 w-8 rounded-full border-2 border-primary ${
             index < code.length ? `bg-primary` : ''
           }`}
         ></div>

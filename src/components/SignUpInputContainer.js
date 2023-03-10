@@ -43,3 +43,4 @@ const SignUpInputContainer = ({onNext}) => {
 }
 
 export default SignUpInputContainer
+
