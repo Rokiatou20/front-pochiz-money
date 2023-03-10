@@ -21,7 +21,6 @@ const SignUpThird = () => {
       <CustomHeaderWithImg image={signUpImg}/>
       <CardText>Veuillez <b>confirmer</b> votre mot de passe.</CardText>
       <CustomKeyboard />
-      <SubmitButton value="S'inscrire" />
     </Card>
   )
 }

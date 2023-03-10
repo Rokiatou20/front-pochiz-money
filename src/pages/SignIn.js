@@ -18,7 +18,7 @@ const SignIn = () => {
       centerY={true}
     >
       <CustomHeaderWithImg image={logo} background='black'/>
-      <CardText>Veuillez entrez votre mot de passe.</CardText>
+      <CardText>Mot de passe oublié ?</CardText>
       <CustomKeyboard color={GOLD} background='black'/>
     </Card>
   )

@@ -10,9 +10,6 @@ const FormContainer = styled.div`
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background: white;
-  border-radius: 0 0 25px 25px;
-  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
   
   div {
     width: 100%;
