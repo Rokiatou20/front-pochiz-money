@@ -6,12 +6,7 @@ import CustomKeyboard from '../components/CustomKeyboard'
 import SubmitButton from '../components/Button';
 import CustomHeaderWithImg from '../components/CustomHeaderWithImg';
 import signUpImg from '../images/sign-up-image.png'
-
-const StyledText = styled.p`
-  text-align: center;
-  width: 100%;
-  margin: 15px 15px 0 0;
-`;
+import CardText from '../components/CardText'
 
 const SignUpThird = () => {
   return (
@@ -24,7 +19,7 @@ const SignUpThird = () => {
       centerY={true}
     >
       <CustomHeaderWithImg image={signUpImg}/>
-      <StyledText>Veuillez <b>confirmer</b> votre mot de passe.</StyledText>
+      <CardText>Veuillez <b>confirmer</b> votre mot de passe.</CardText>
       <CustomKeyboard />
       <SubmitButton value="S'inscrire" />
     </Card>

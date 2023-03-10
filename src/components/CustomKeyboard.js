@@ -11,7 +11,7 @@ const StyledCard = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 20px;
+  margin: 20px 0 20px 0;
 
   .numpad{
     display: flex;
