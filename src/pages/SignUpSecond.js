@@ -16,7 +16,7 @@ const SignUpSecond = () => {
   
   useEffect(() => {
     if (code.length === 6) { 
-      navigate("/");
+      navigate("/sign-up/end");
     }
   }, [code, navigate]);
    

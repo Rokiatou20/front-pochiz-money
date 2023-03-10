@@ -55,18 +55,18 @@ const CustomKeyboard = ({color, background, setCode}) => {
       {numbers.map((row, index) => (
         <div key={index} className="numpad">
           {row.map((number) => (
-            <div key={number} className="numpadNumber" onClick={() => handleButtonClick(number)}>
+            <div key={number} className="numpadNumber cursor-pointer" onClick={() => handleButtonClick(number)}>
               {number}
             </div>
           ))}
         </div>
       ))}
       <div className="numpad">
-        <div className="numpadNumber" style={{background: 'white', boxShadow: 'none'}}></div>
-        <div className="numpadNumber" onClick={() => handleButtonClick(0)}>
+        <div className="numpadNumber cursor-pointer" style={{background: 'white', boxShadow: 'none'}}></div>
+        <div className="numpadNumber cursor-pointer" onClick={() => handleButtonClick(0)}>
           0
         </div>
-        <div className="numpadNumber" onClick={() => handleButtonClick('backspace')}>
+        <div className="numpadNumber cursor-pointer" onClick={() => handleButtonClick('backspace')}>
           <FeatherIcon icon='delete'/>
         </div>
       </div>

@@ -1,7 +1,6 @@
 import React from 'react'
 import CustomInput from './CustomInput'
 import styled from 'styled-components';
-import { GOLD } from '../utils/Constants';
 
 const FormContainer = styled.div`
   display: flex;
@@ -26,18 +25,19 @@ const SignUpInputContainer = ({onNext}) => {
   return (
     <FormContainer>
       <div>
-        <CustomInput type='text' label='Nom' placeholder='OUATTARA' onChange />
-        <CustomInput type='text' label='Prénom(s)' placeholder='Rokiatou' onChange />
-        <CustomInput type='date' label='Date de naissance' placeholder='OUATTARA' onChange />
-        <CustomInput type='tel' label='Numéro de téléphone' placeholder='01 02 03 04 05' onChange />
+        <CustomInput type='text' label='Nom' placeholder='OUATTARA' />
+        <CustomInput type='text' label='Prénom(s)' placeholder='Rokiatou' />
+        <CustomInput type='date' label='Date de naissance' placeholder='OUATTARA' />
+        <CustomInput type='tel' label='Numéro de téléphone' placeholder='01 02 03 04 05' />
       </div>
       <button 
         type='submit'
         onClick={onNext}
-        className={`bg-[${GOLD}] hover:bg-yellow-500 text-white font-bold py-3 px-8 rounded-lg drop-shadow-xl`}
+        className="bg-primary font-bold py-3 px-8 rounded-lg drop-shadow-xl text-white"
       >
         Suivant
       </button>
+
     </FormContainer>
   )
 }

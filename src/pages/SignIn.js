@@ -37,8 +37,8 @@ const SignIn = () => {
         <PasswordCircleContainer code={code} />
         <CustomKeyboard color={GOLD} background='black' setCode={handleCodeChange} />
         <div className="flex flex-row justify-between items-center gap-4 mt-2">
-          <h1 className={`font-medium text-[${GOLD}] cursor-pointer`}>Mot de passe oublié ?</h1>
-          <h1 className={`font-medium text-[${GOLD}] cursor-pointer`} onClick={handleSignUp}>Créer un compte ?</h1>
+          <h1 className={`font-medium text-primary cursor-pointer`}>Mot de passe oublié ?</h1>
+          <h1 className={`font-medium text-primary cursor-pointer`} onClick={handleSignUp}>Créer un compte ?</h1>
         </div>
 
       </Card>

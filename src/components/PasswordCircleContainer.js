@@ -1,5 +1,4 @@
 import React from 'react'
-import { GOLD } from '../utils/Constants';
 
 const nbDigitCode = [0, 1, 2, 3, 4, 5]
 
@@ -9,8 +8,8 @@ const PasswordCircleContainer = ({code}) => {
       {nbDigitCode.map((index) => (
         <div
           key={index}
-          className={`h-8 w-8 rounded-full border-4 border-[${GOLD}] ${
-            index < code.length ? `bg-[${GOLD}]` : ''
+          className={`h-8 w-8 rounded-full border-4 border-primary ${
+            index < code.length ? `bg-primary` : ''
           }`}
         ></div>
       ))}

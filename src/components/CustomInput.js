@@ -20,11 +20,11 @@ const InputField = styled.input`
   width: 100%;
 `;
 
-const CustomInput = ({ type, label, value, placeholder, onChange }) => {
+const CustomInput = ({ type, label, placeholder }) => {
   return (
     <InputWrapper>
       <InputLabel>{label}</InputLabel>
-      <InputField type={type} value={value} placeholder={placeholder} onChange={onChange} required/>
+      <InputField type={type} placeholder={placeholder} required/>
     </InputWrapper>
   );
 };

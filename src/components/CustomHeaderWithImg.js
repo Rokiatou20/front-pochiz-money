@@ -18,6 +18,11 @@ const StyledCard = styled.div`
     height: 90%;
     box-shadow: '5px 5px 5px 5px rgba(0, 0, 0, 0.2)';
   }
+  
+  @media only screen and (max-width: 480px) {
+    border-radius: 10px;
+    box-shadow: 0px;
+  }
 `;
 
 const CustomHeaderWithImg = ({image, background}) => {
