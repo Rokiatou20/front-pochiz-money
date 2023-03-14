@@ -10,24 +10,22 @@ const StyledCard = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: 10px 0 0 0;
 
   .numpad{
     display: flex;
     justify-content: center;
-    margin: 5px;
   }
 
   .numpadNumber{
-    background: ${props => props.background};
-    color: ${props => props.color};
     display: flex;
     justify-content: center;
     align-items: center;
+    background: ${props => props.background};
+    color: ${props => props.color};
     font-weight: bold;
     padding: 11px;
     border-radius: 10px;
-    margin: 0 8px 8px 8px;
+    margin: 6px ;
     width: 20%;
     font-size: 1.5rem;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);

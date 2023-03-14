@@ -33,10 +33,10 @@ const SignIn = () => {
         centerY={true}
       >
         <CustomHeaderWithImg image={logo} background='black'/>
-        <h1 className={`my-6 font-regular text-[black]`} >Veuillez entrer votre mot de passe.</h1>
+        <h1 className={`font-regular text-[black]`} >Veuillez entrer votre mot de passe.</h1>
         <PasswordCircleContainer code={code} />
         <CustomKeyboard color={GOLD} background='black' setCode={handleCodeChange} />
-        <div className="flex flex-row justify-between items-center gap-4 mt-2">
+        <div className="flex flex-row justify-between items-center gap-4">
           <h1 className={`font-medium text-primary cursor-pointer`}>Mot de passe oublié ?</h1>
           <h1 className={`font-medium text-primary cursor-pointer`} onClick={handleSignUp}>Créer un compte ?</h1>
         </div>

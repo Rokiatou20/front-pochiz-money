@@ -9,22 +9,21 @@ const InputWrapper = styled.div`
 `;
 
 const InputLabel = styled.label`
-  margin-bottom: 5px;
-  font-weight: bold
+  margin-bottom: 2px;
 `;
 
 const InputField = styled.input`
-  padding: 8px;
-  border-radius: 10px;
-  border: 4px solid ${GOLD};
+  padding: 5px;
+  border-radius: 6px;
+  border: 2px solid ${GOLD};
   width: 100%;
 `;
 
-const CustomInput = ({ type, label, placeholder }) => {
+const CustomInput = ({ type, label, placeholder, value, onChange }) => {
   return (
     <InputWrapper>
-      <InputLabel>{label}</InputLabel>
-      <InputField type={type} placeholder={placeholder} required/>
+      <InputLabel className="font-medium">{label}</InputLabel>
+      <InputField type={type} value={value} placeholder={placeholder} onChange={onChange} required/>
     </InputWrapper>
   );
 };

@@ -5,6 +5,7 @@ import styled from 'styled-components';
 const FormContainer = styled.div`
   display: flex;
   justify-content: center;
+  gap: 2%;
   align-items: center;
   flex-direction: column;
   width: 100%;
@@ -15,8 +16,12 @@ const FormContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     padding: 0 10px;
+  }
+
+  button {
+    color: white;
   }
 `;
 
@@ -33,7 +38,7 @@ const SignUpInputContainer = ({onNext}) => {
       <button 
         type='submit'
         onClick={onNext}
-        className="bg-primary font-bold py-3 px-8 rounded-lg drop-shadow-xl text-white"
+        className="bg-primary font-bold py-3 px-8 rounded-lg drop-shadow-xl"
       >
         Suivant
       </button>

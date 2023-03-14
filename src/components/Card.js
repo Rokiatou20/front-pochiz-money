@@ -3,15 +3,18 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const StyledCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 2.5%;
   width: ${props => props.width}px;
   height: ${props => props.height}px;
   background: ${props => props.background};
-  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 25px;
-  display: flex;
   justify-content: ${props => props.centerX ? 'center' : ''};
   align-items: ${props => props.centerY ? 'center' : ''};
-  flex-direction: column;
+
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  padding-bottom: 2%;
 
   /* Media queries for responsive design */
   @media only screen and (max-width: 480px) {

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { useNavigate } from 'react-router-dom';
 import Card from '../components/Card'
 import styled from 'styled-components';
@@ -14,9 +14,11 @@ const SplashScreen = () => {
   
   const navigate = useNavigate()
   
-  setTimeout(() => {
-    navigate("/sign-in")
-  },3000)
+  useEffect (() => {
+    setTimeout(() => {
+      navigate("/sign-in")
+    },3000)
+  })
 
   return (
     <div className='self-center' >

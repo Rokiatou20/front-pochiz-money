@@ -32,7 +32,7 @@ const SignUpSecond = () => {
         centerY={true}
       >
         <CustomHeaderWithImg image={signUpImg}/>
-        <h1 className={`my-9 font-regular text-[black]`} >Veuillez entrer votre mot de passe.</h1>
+        <h1 className={`mt-4 font-regular text-[black]`} >Veuillez entrer votre mot de passe.</h1>
         <PasswordCircleContainer code={code} />
         <CustomKeyboard setCode={handleCodeChange} />
       </Card>

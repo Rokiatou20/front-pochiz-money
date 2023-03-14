@@ -9,7 +9,7 @@ import PasswordCircleContainer from '../components/PasswordCircleContainer';
 const SignUpThird = () => {
 
   const [code, setCode] = useState([]);
-
+  
   const handleCodeChange = (newCode) => setCode(newCode);
 
   return (
@@ -23,7 +23,7 @@ const SignUpThird = () => {
         centerY={true}
       >
         <CustomHeaderWithImg image={signUpImg}/>
-        <h1 className={`my-9 font-regular text-[black]`}>
+        <h1 className={`mt-4 font-regular text-[black]`}>
           Veuillez 
           <span className={`font-bold`}> confirmer </span> 
           votre mot de passe.
